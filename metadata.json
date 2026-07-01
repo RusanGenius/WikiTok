@@ -1,0 +1,6 @@
+{
+  "name": "Wikitok",
+  "description": "An intelligent, TikTok-style feed for Wikipedia articles with multi-language support, built-in translation, and personalized profiles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
