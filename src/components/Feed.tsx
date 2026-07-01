@@ -225,13 +225,12 @@ export default function Feed() {
       {/* Scrollable Feed Container + Header are inside a rounded, overflow-hidden wrapper to clip article content beautifully */}
       <div className="flex-1 w-full h-full overflow-hidden flex flex-col md:rounded-[32px] relative">
         {/* Top Header Navigation */}
-        <header className="absolute top-0 left-0 right-0 z-20 flex justify-between items-center px-8 py-6 bg-gradient-to-b from-black/80 to-transparent pointer-events-none">
+        <header className="absolute top-0 left-0 right-0 z-20 flex justify-center items-center px-8 py-6 bg-gradient-to-b from-black/80 to-transparent pointer-events-none">
           <button 
             onClick={handleRefresh}
-            className="flex items-center space-x-2 pointer-events-auto cursor-pointer group active:scale-95 transition-transform duration-150 focus:outline-none"
+            className="flex items-center pointer-events-auto cursor-pointer group active:scale-95 transition-transform duration-150 focus:outline-none"
           >
-            <div className="w-6 h-6 bg-white text-black rounded flex items-center justify-center font-extrabold text-sm shadow-md shadow-white/10 group-hover:brightness-90 transition-all select-none">W</div>
-            <span className="text-xl font-light tracking-tighter text-white select-none">Wiki<span className="font-bold">Tok</span></span>
+            <span className="text-3xl font-serif text-white tracking-wider select-none font-normal">WikiTok</span>
           </button>
         </header>
 
@@ -255,7 +254,7 @@ export default function Feed() {
 
       {/* Floating Interaction Sidebar - positioned lower right on mobile, and moved outside the frame on PC */}
       {articles.length > 0 && articles[currentIndex] && (
-        <div className="absolute right-4 bottom-4 sm:right-8 sm:bottom-6 md:right-auto md:left-[calc(100%+16px)] md:bottom-6 z-20 transition-all duration-300">
+        <div className="absolute right-4 bottom-14 sm:right-8 sm:bottom-20 md:right-auto md:left-[calc(100%+16px)] md:bottom-12 z-20 transition-all duration-300">
           <Sidebar 
             article={articles[currentIndex]} 
             onNext={scrollToNext} 

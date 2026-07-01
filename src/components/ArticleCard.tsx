@@ -50,22 +50,22 @@ export default function ArticleCard({ article, onNext, onUpdateArticle }: Articl
         ) : (
           <div className={`absolute inset-0 w-full h-full ${gradient.bg} z-0 overflow-hidden`}>
             {/* Rich multi-stop non-linear mesh radial glows */}
-            <div className={`absolute -top-[20%] -left-[20%] w-[90%] h-[90%] rounded-full ${gradient.blobs[0]} blur-[90px] animate-pulse`} style={{ animationDuration: '8s' }} />
-            <div className={`absolute -bottom-[20%] -right-[20%] w-[90%] h-[90%] rounded-full ${gradient.blobs[1]} blur-[90px] animate-pulse`} style={{ animationDuration: '10s' }} />
-            <div className={`absolute top-[20%] left-[20%] w-[70%] h-[70%] rounded-full ${gradient.blobs[2]} blur-[110px]`} />
+            <div className={`absolute -top-[20%] -left-[20%] w-[90%] h-[90%] rounded-full ${gradient.blobs[0]} blur-[90px] animate-blob-1`} />
+            <div className={`absolute -bottom-[20%] -right-[20%] w-[90%] h-[90%] rounded-full ${gradient.blobs[1]} blur-[90px] animate-blob-2`} />
+            <div className={`absolute top-[20%] left-[20%] w-[70%] h-[70%] rounded-full ${gradient.blobs[2]} blur-[110px] animate-blob-3`} />
           </div>
         )}
       </div>
 
       {/* Main Content Area */}
-      <div className="relative z-10 flex-1 flex flex-row items-end px-4 pb-6 sm:px-12 sm:pb-8 pt-24 w-full h-full">
+      <div className="relative z-10 flex-1 flex flex-row items-start px-4 pb-6 sm:px-12 sm:pb-8 pt-[45vh] w-full h-full">
         
         {/* Article Text Section */}
         <div className="flex-1 max-w-2xl sm:max-w-3xl md:max-w-full space-y-3 sm:space-y-4 animate-fade-in mr-16 sm:mr-24 md:mr-0 pb-4">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight select-text">
             {article.title}
           </h1>
-          <p className="text-sm sm:text-base md:text-lg text-white/80 leading-relaxed font-light overflow-y-auto max-h-[35vh] no-scrollbar select-text">
+          <p className="text-[15px] sm:text-[17px] md:text-[19px] text-white/85 leading-relaxed font-light overflow-y-auto max-h-[35vh] no-scrollbar select-text">
             {article.extract}
           </p>
         </div>

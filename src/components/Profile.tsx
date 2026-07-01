@@ -48,8 +48,8 @@ export default function Profile() {
           <ArrowLeft size={20} className="text-white" />
         </button>
         <div className="flex items-center space-x-2">
-           <User size={28} className="text-white/90" />
-           <span className="text-2xl font-light tracking-tighter">My <span className="font-bold">Profile</span></span>
+           <User size={24} className="text-white/90" />
+           <span className="text-2xl font-medium tracking-tight text-white/95">My Profile</span>
         </div>
         <div className="w-10"></div> {/* Spacer for centering */}
       </header>

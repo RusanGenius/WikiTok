@@ -1,0 +1,24 @@
+{
+  "short_name": "WikiTok",
+  "name": "WikiTok - Wikipedia Video-like Feed",
+  "description": "Short, immersive, video-style Wikipedia feed to explore and discover the world's knowledge.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000000",
+  "theme_color": "#6366f1",
+  "display": "standalone",
+  "orientation": "portrait"
+}
